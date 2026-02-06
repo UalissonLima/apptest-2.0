@@ -75,16 +75,17 @@
     word-wrap: break-word;
     word-break: break-word;
     hyphens: auto;
-    text-justify: inter-word;
 }
 
 .subItem-dataLembretes {
     display: flex;
+    align-items: center;
     gap: 5px;
 }
 
 .subItem-dataLembretes span {
     font-size: var(--font-pequena);
+    color: var(--font-cinza);
 }
 
 .nome-concluidoLembretes {

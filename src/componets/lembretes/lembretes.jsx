@@ -12,6 +12,8 @@ import {
     doc,
     serverTimestamp
 } from "firebase/firestore";
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 function Lembretes() {
     const [listaLembretes, setListaLembretes] = useState([]);
@@ -30,9 +32,21 @@ function Lembretes() {
         return () => unsubscribe();
     }, []);
 
-    const formatarParaDate = (dataStr, horaStr) => {
+    const formatarParaDate = (dataStr, horaStr = "00:00") => {
         const [dia, mes, ano] = dataStr.split('/');
         return new Date(`${ano}-${mes}-${dia}T${horaStr}:00`);
+    };
+
+    // FUNÇÃO ATUALIZADA: REMOVE O "-FEIRA"
+    const obterDiaSemana = (dataStr) => {
+        try {
+            const dataObj = formatarParaDate(dataStr);
+            const diaSemana = format(dataObj, 'eeee', { locale: ptBR });
+            // Aqui fazemos a mágica de remover o sufixo
+            return diaSemana.replace('-feira', '');
+        } catch (error) {
+            return '';
+        }
     };
 
     const calcularStatus = (lembrete) => {
@@ -116,14 +130,8 @@ function Lembretes() {
             <div className='element-tituloLembretes'>lembretes</div>
 
             <div className='box-lembretes'>
-                {/* LÓGICA DE LISTA VAZIA */}
                 {lembretesOrdenados.length === 0 ? (
-                    <div style={{
-                        margin: 'auto',
-                        opacity: '0.5',
-                        fontStyle: 'italic',
-                        fontSize: 'var(--font-pequena)'
-                    }}>
+                    <div style={{ margin: 'auto', opacity: '0.5', fontStyle: 'italic', fontSize: 'var(--font-pequena)' }}>
                         nenhum lembrete por aqui...
                     </div>
                 ) : (
@@ -146,9 +154,9 @@ function Lembretes() {
 
                                 <div className='item-nomeLembretes'>
                                     <div className='subItem-dataLembretes'>
-                                        <span>{lembrete.data}</span>
-                                        <span>-</span>
                                         <span>{lembrete.hora}</span>
+                                        <span>- {lembrete.data}</span>
+                                        <span>- {obterDiaSemana(lembrete.data)}</span>
                                     </div>
                                     <div className={`nome-lembretes ${estaConcluido ? 'nome-concluidoLembretes' : ''}`}>
                                         {lembrete.texto}

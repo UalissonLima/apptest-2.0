@@ -141,7 +141,7 @@ function Cronometro() {
                         style={{ opacity: segundos === 0 ? 0.5 : 1, cursor: segundos === 0 ? 'not-allowed' : 'pointer' }}
                     >
                         <span className='material-icons'>check_circle</span>
-                        <p>finalizar</p>
+                        <p>concluir</p>
                     </button>
                 </div>
             </div>
