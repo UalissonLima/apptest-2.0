@@ -28,7 +28,8 @@
     border-radius: 5px 5px 0px 0px;
     width: 85%;
     gap: 25px;
-    background-color: var(--cor-item-cinza);
+    background-color: var(--cor-container-cinza);
+    /* cor mais especifica para o container cinza */
 }
 
 .subItem-disciplinaHistorico {
