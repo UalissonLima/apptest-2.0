@@ -1,0 +1,66 @@
+.modal-sobreposicaoRegistroEdital {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.container-mainRegistroEdital {
+    background-color: var(--cor-container-preta);
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    border: var(--borda-3px-verde);
+}
+
+.element-registroEdital {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item-nomeRegistroEdital {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-registroEdital {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--font-preta);
+}
+
+.item-btnRegistroEdital {
+    display: flex;
+    gap: 12.5px;
+    justify-content: end;
+}
+
+.btn-padraoRegistroEdital {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCancelarRegistroEdital {
+    background-color: var(--cor-botao-vermelho);
+}
+
+
+.btnSalvarRegistroEdital {
+    background-color: var(--cor-botao-verde);
+}

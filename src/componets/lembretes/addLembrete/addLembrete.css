@@ -1,0 +1,93 @@
+.modal-sobreposicaoLembrete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.container-mainRegistroLembrete {
+    background-color: var(--cor-container-preta);
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: var(--borda-3px-verde);
+}
+
+.element-registroLembrete {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item-dataRegistroLembrete, .item-horaRegistroLembrete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-padraoRegistroLembrete {
+    width: 200px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: var(--font-preta);
+}
+
+.element-textoRegistroLembrete {
+    width: 100%;
+}
+
+.item-textoRegistroLembrete {
+    background-color: var(--cor-item-cinza);
+    color: var(--font-preta);
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+}
+
+.item-textAreaRegistroLembrete {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: var(--borda-1px-verde);
+    resize: none;
+    color: var(--font-preta);
+}
+
+.item-btnRegistroLembrete {
+    display: flex;
+    gap: 12.5px;
+    justify-content: end;
+}
+
+.btn-padraRegistroLembrete {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cancelarRegistroLembrete {
+    background-color: var(--cor-botao-vermelho);
+}
+
+.btn-salvarRegistroLembrete {
+    background-color: var(--cor-botao-verde);
+}

@@ -1,0 +1,62 @@
+.container-mainInfos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-container-preta);
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.element-padraoInfos {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 25px;
+    gap: 12.5px;
+}
+
+.item-padraoInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5px;
+    padding: 10px;
+    border-bottom: var(--borda-3px-verde);
+    border-radius: 25px;
+}
+
+.item-padraoTempoInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-padraoTempoInfos p {
+    font-size: var(--font-grande);
+}
+
+.item-questoesInfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5px;
+}
+
+.porcentagem-infos {
+    font-size: var(--font-grande);
+}
+
+.acertosErros-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.acertos-infos {
+    font-size: var(--font-pequena);
+    color: var(--font-verde);
+}
+
+.erros-infos {
+    color: var(--font-vermelha);
+    font-size: var(--font-pequena);
+}

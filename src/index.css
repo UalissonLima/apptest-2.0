@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-size: var(--font-padrao);
+  color: var(--font-branca);
+
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+#root {
+  background-color: var(--cor-fundo);
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  /* GAP ----------------------------------*/
+  --padrao-gap: 25px;
+  --minino-gap: 5px;
+  --meio-gap: 12.5px;
+  --dobro-gap: 50px;
+
+  /* PADDING ----------------------------- */
+  --padrao-padding: 10px;
+  --lateral-padding: 0px 10px;
+  --altura-padding: 10px 0px;
+  --meio-padding: 5px;
+
+  /* BACKGROUND -------------------------- */
+  --cor-fundo: black;
+
+  --cor-fundo-modal: rgba(0, 0, 0, 0.700);
+
+  --cor-container-preta: rgb(19, 18, 18);
+  --cor-container-cinza: rgb(112, 112, 112);
+  --cor-container-branco: rgb(255, 255, 255);
+
+  --cor-element-preta: rgb(34, 33, 33);
+  --cor-element-cinza: rgb(160, 157, 157);
+  --cor-element-branco: rgb(235, 228, 228);
+
+  --cor-item-preta: rgb(59, 53, 53);
+  --cor-item-cinza: rgb(189, 179, 179);
+  --cor-item-branco: rgb(214, 207, 207);
+
+  --cor-botao-verde: rgb(35, 190, 35);
+  --cor-botao-vermelho: rgb(177, 45, 45);
+  --cor-botao-amarelo: rgb(175, 175, 25);
+  --cor-botao-branco: white;
+
+  /* COLOR FONT -------------------------- */
+  --font-preta: black;
+  --font-branca: white;
+  --font-cinza: gray;
+  --font-vermelha: red;
+  --font-verde: green;
+
+  /* TAMANHO FONT ------------------------ */
+  --font-padrao: 16px;
+  --font-pequena: 12px;
+  --font-grande: 30px;
+  --font-extra-grande: 50px;
+  --font-titulo: 25px;
+
+  /* BORDER ------------------------------ */
+  --borda-1px-verde: 1px solid green;
+  --borda-3px-verde: 3px solid green;
+  --borda-5px-verde: 5px solid green;
+
+  --borda-1px-branca: 1px solid white;
+  --borda-3px-branca: 3px solid white;
+  --borda-5px-branca: 5px solid white;
+
+  --borda-1px-vermelha: 1px solid red;
+  --borda-3px-vermelha: 3px solid red;
+  --borda-5px-vermelha: 5px solid red;
+}

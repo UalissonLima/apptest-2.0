@@ -1,0 +1,137 @@
+.container-edital {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container-mainAddDisciplina {
+    background-color: var(--cor-container-preta);
+    border: var(--borda-3px-branca);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-mainAddDisciplina:hover {
+    border: var(--borda-3px-verde);
+    color: var(--font-verde);
+}
+
+.container-mainEdital {
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    flex-direction: column;
+    width: 80%;
+}
+
+.container-mostraTopico, .container-mostraSubtopico {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+}
+
+.element-edital {
+    display: flex;
+    background-color: var(--cor-element-preta);
+    align-items: center;
+
+    justify-content: end;
+    padding: 5px;
+}
+
+.element-topico {
+    background-color: var(--cor-element-cinza);
+    margin-left: 20px;
+    border-radius: 0px 0px 0px 25px;
+}
+
+.element-subtopico {
+    background-color: var(--cor-element-preta);
+    opacity: 0.9;
+    margin-left: 40px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.item-opcoesEdital {
+    display: flex;
+    align-items: center;
+    gap: 12.5px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.opcoes-deleteEdital {
+    color: var(--cor-botao-vermelho);
+}
+
+.opcoes-editEdital {
+    color: var(--cor-botao-branco);
+}
+
+.item-nomeEdital {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    cursor: pointer;
+    gap: 12.5px;
+    padding: 0px 10px;
+}
+
+.icon-transparentEdital {
+    color: transparent;
+}
+
+.nome-editalPadrao {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.item-estatisticaEdital {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5px;
+    width: 395px;
+    background-color: var(--cor-item-preta);
+    border-radius: 25px;
+}
+
+.estatistica-padraoEdital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 5px;
+}
+
+.item-addEdital {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-addEdital {
+    width: 90%;
+    border: none;
+    padding: 10px;
+    border: var(--borda-3px-verde);
+    background-color: var(--cor-botao-amarelo);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: var(--font-pequena);
+    color: var(--font-preta);
+    font-weight: bold;
+}
+
+.btn-transparenteEdital {
+    background-color: transparent;
+    cursor: default;
+    border: none;
+}

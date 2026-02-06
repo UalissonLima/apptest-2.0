@@ -1,0 +1,140 @@
+.container-mainCalendario {
+    width: 50%;
+    height: 100%;
+    background-color: var(--cor-container-preta);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.element-mesCalendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-element-cinza);
+}
+
+.btn-mesPadraoCalanderio {
+    background-color: var(--cor-botao-branco);
+    color: var(--font-preta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.nome-mesCalendario, .nome-mesCalendario span {
+    font-size: var(--font-titulo);
+}
+
+.box-calendario {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+    padding: 0px 40px;
+}
+
+.element-semanaCalendario {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    justify-content: space-between;
+}
+
+.item-nomeSemanaCalendario {
+    background-color: var(--cor-item-branco);
+    color: var(--font-preta);
+    border-radius: 5px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.element-diaCalendario {
+    display: grid;
+    grid-template-columns: repeat(7, 0fr);
+    justify-content: space-between;
+}
+
+.item-diaCalendario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-item-preta);
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.item-diaCalendario:hover {
+    background: var(--cor-item-cinza);
+    color: var(--font-preta);
+}
+
+.item-diaFora {
+    color: var(--font-preta);
+    background-color: var(--cor-item-cinza);
+}
+
+.item-diaSelecionado {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border: var(--borda-5px-branca);
+}
+
+.item-diaComEstudo{
+    background-color: var(--cor-botao-verde);
+}
+
+.element-infosCalendario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 95px;
+    padding: 0px 10px;
+    gap: 5px;
+}
+
+.item-tempoInfosCalendario {
+    display: flex;
+    gap: 12.5px;
+    background-color: var(--cor-item-preta);
+    border-radius: 5px;
+}
+
+.nome-tempoInfos {
+    min-width: fit-content;
+}
+
+
+.item-disciplinasCalendario {
+    display: flex;
+    align-items: start;
+    gap: 12.5px;
+    background-color: var(--cor-item-preta);
+    border-radius: 5px;
+}
+
+.nome-disciplinaInfos {
+    min-width: fit-content;
+}
+
+.disciplinas-infos {
+    display: flex;
+    height: 55px;
+    overflow-y: auto;
+    hyphens: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.disciplinas-infos::-webkit-scrollbar {
+    width: 0px;
+}

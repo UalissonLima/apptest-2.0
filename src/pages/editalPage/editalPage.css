@@ -1,0 +1,6 @@
+.container-mainEditalPrincipal{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

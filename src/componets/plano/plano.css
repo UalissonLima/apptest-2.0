@@ -1,0 +1,75 @@
+.container-mainPlano {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-container-preta);
+    border-radius: 5px;
+}
+
+.element-plano {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+
+.item-padraoPlano {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.subItem-padraoPlano {
+    background-color: var(--cor-item-preta);
+    border: var(--borda-3px-verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0px 25px;
+    position: relative;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.subItem-padraoPlano p {
+    color: var(--font-branca);
+}
+
+.subItem-selecionadoPlano {
+    border: var(--borda-3px-branca);
+    background-color: var(--cor-botao-verde);
+}
+
+.subItem-selecionadoPlano p {
+    color: var(--font-preta);
+}
+
+.subItem-addPlano {
+    display: flex;
+    gap: 12.5px;
+    background-color: var(--cor-item-branco);
+    border: var(--borda-3px-branca);
+    border-radius: 25px;
+}
+
+.subItem-addPlano span, .subItem-addPlano p {
+    color: var(--font-preta);
+}
+
+.delete-plano {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+}
+
+.delete-plano span {
+    color: var(--cor-botao-vermelho);
+}

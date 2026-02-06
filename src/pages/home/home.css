@@ -1,0 +1,16 @@
+.container-mainHome {
+    display: flex;
+    gap: 25px;
+}
+
+.element-infosHome {
+    display: flex;
+    height: 500px;
+}
+
+.element-LemCaleHome {
+    gap: 25px;
+    display: flex;
+    height: 500px;
+    width: 100%;
+}

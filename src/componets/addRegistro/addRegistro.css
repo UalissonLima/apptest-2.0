@@ -1,0 +1,226 @@
+.modal-sobreposicaoRegistro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.container-mainRegistro {
+    background-color: black;
+    width: 65%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12.5px;
+    border: var(--borda-3px-verde);
+    transform: scale(0.9);
+    overflow-y: auto;
+    height: 102%;
+}
+
+.container-mainRegistro::-webkit-scrollbar {
+    width: 0px;
+}
+
+.element-dataRegistro {
+    background-color: var(--cor-element-cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-padraoDataRegistro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.item-padraoDataRegistro p {
+    color: var(--font-preta);
+}
+
+.input-dataRegistro, .input-tempoRegistro, .select-periodoRegistro {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--font-preta);
+}
+
+.select-periodoRegistro option {
+    color: var(--font-preta);
+}
+
+.box-editalRegistro {
+    border-radius: 5px;
+    background-color: var(--cor-element-cinza);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.box-editalRegistro p {
+    color: var(--font-preta);
+}
+
+.item-padraoEditalRegistro {
+    margin-bottom: 12.5px;
+}
+
+.select-padraoEditalRegistro {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    color: var(--font-preta);
+}
+
+.select-padraoEditalRegistro option {
+    color: var(--font-preta);
+}
+
+.element-btnEstudosRegistro {
+    background-color: var(--cor-element-cinza);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-padraoEstudosRegistro {
+    background-color: var(--cor-botao-branco);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-preta);
+    cursor: pointer;
+}
+
+.btn-selecionadoRegistro {
+    background-color: var(--cor-botao-verde);
+    font-weight: bold;
+}
+
+.element-questoesRegistro, .item-questoesSimuladoRegistro {
+    background-color: var(--cor-element-cinza);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-padraoQuestoesRegistro, .subItem-questoesSimuladoRegistro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12.5px;
+}
+
+.input-padraoQuestoesRegistro, .input-padraoQuestoesSimuladoRegistro {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    color: var(--font-preta);
+    border: none;
+}
+
+.element-simuladoRegistro {
+    background-color: var(--cor-element-cinza);
+    border-radius: 5px;
+}
+
+.item-infosSimuladoRegistro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subItem-padraoInfosSimuladoRegistro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-padraoInfosSimuladoRegistro {
+    color: var(--font-preta);
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    border: none;
+}
+
+.item-questoesSimuladoRegistro {
+    background-color: transparent;
+}
+
+.element-comentarioRegistro {
+    background-color: var(--cor-element-cinza);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.element-comentarioRegistro p {
+    color: var(--font-preta);
+}
+
+.textarea-comentarioRegistro {
+    background-color: var(--cor-botao-branco);
+    color: var(--font-preta);
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    overflow-y: auto;
+    resize: none;
+    text-align: justify;
+}
+
+.element-btnAddRegistro {
+    display: flex;
+    gap: 12.5px;
+    justify-content: end;
+}
+
+.btn-padraoAddRegistro {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--font-branca);
+}
+
+.btn-cancelarAddRegistro {
+    background-color: var(--cor-botao-vermelho);
+}
+
+.btn-salvarAddRegistro {
+    background-color: var(--cor-botao-verde);
+}

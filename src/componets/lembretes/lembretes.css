@@ -1,0 +1,128 @@
+.container-mainLembretes {
+    background-color: var(--cor-container-preta);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.element-tituloLembretes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-titulo);
+}
+
+.box-lembretes {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+.box-lembretes::-webkit-scrollbar {
+    width: 0px;
+}
+
+.element-faixaLembretes {
+    background-color: var(--cor-element-preta);
+    border: var(--borda-3px-branca);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+    border-radius: 0px 25px 25px 0px;
+    transition: all 0.3s ease;
+}
+
+.element-faixaConcluido {
+    opacity: 0.5;
+    border: var(--borda-3px-verde);
+}
+
+.element-faixaAtrasada {
+    border: var(--borda-3px-vermelha);
+}
+
+.item-statusLembretes {
+    border-radius: 5px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-lembrete {
+    color: var(--font-preta);
+    font-size: var(--font-pequena);
+}
+
+.item-nomeLembretes {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.subItem-dataLembretes {
+    display: flex;
+    gap: 5px;
+}
+
+.subItem-dataLembretes span {
+    font-size: var(--font-pequena);
+}
+
+.nome-concluidoLembretes {
+    text-decoration: line-through;
+}
+
+.item-opcoesLembretes {
+    display: flex;
+    gap: 12.5px;
+}
+
+.concluir-opcoesLembretes, .apagar-opcoesLembretes, .editar-opcoesLembretes {
+    cursor: pointer;
+    color: var(--cor-botao-branco);
+    font-size: 20px;
+    /* especifico font-size */
+}
+
+.concluir-opcoesLembretes:hover {
+    color: var(--cor-botao-verde);
+
+}
+
+.apagar-opcoesLembretes:hover {
+    color: var(--cor-botao-vermelho);
+}
+
+.editar-opcoesLembretes:hover {
+    color: var(--cor-botao-amarelo);
+}
+
+.element-btnAddLembretes button {
+    background-color: var(--cor-botao-branco);
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--font-preta);
+}
