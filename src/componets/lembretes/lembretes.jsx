@@ -129,7 +129,7 @@ function Lembretes() {
                 ) : (
                     lembretesOrdenados.map((lembrete) => {
                         const statusAtual = calcularStatus(lembrete);
-                        const estaAtrasado = statusAtual === 'ATRASADO';
+                        const estaAtrasado = statusAtual === 'atrasado';
                         const estaConcluido = lembrete.concluido;
 
                         return (

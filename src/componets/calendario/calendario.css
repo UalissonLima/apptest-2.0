@@ -73,12 +73,12 @@
 }
 
 .item-diaCalendario:hover {
-    background: var(--cor-item-cinza);
+    background: var(--cor-item-branco);
     color: var(--font-preta);
 }
 
 .item-diaFora {
-    color: var(--font-preta);
+    color: var(--font-cinza);
     background-color: var(--cor-item-cinza);
 }
 
@@ -98,7 +98,6 @@
     justify-content: center;
     flex-direction: column;
     height: 95px;
-    padding: 0px 10px;
     gap: 5px;
 }
 
@@ -107,6 +106,7 @@
     gap: 12.5px;
     background-color: var(--cor-item-preta);
     border-radius: 5px;
+    padding: 5px;
 }
 
 .nome-tempoInfos {
@@ -120,6 +120,7 @@
     gap: 12.5px;
     background-color: var(--cor-item-preta);
     border-radius: 5px;
+    padding: 5px;
 }
 
 .nome-disciplinaInfos {

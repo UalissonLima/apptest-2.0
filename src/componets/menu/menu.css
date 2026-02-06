@@ -26,7 +26,7 @@ a{
 }
 
 li {
-    background-color: var(--cor-item-cinza);
+    background-color: var(--cor-item-branco);
     color: var(--font-preta);
     display: flex;
     align-items: center;

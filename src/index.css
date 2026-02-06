@@ -36,31 +36,31 @@
   /* BACKGROUND -------------------------- */
   --cor-fundo: black;
 
-  --cor-fundo-modal: rgba(0, 0, 0, 0.700);
+  --cor-fundo-modal: rgba(255, 255, 255, 0.507);
 
-  --cor-container-preta: rgb(19, 18, 18);
-  --cor-container-cinza: rgb(112, 112, 112);
-  --cor-container-branco: rgb(255, 255, 255);
+  --cor-container-preta: #2C2C2C;
+  --cor-container-cinza: #BDBDBD;
+  --cor-container-branco: #FFFFFF;
 
-  --cor-element-preta: rgb(34, 33, 33);
-  --cor-element-cinza: rgb(160, 157, 157);
-  --cor-element-branco: rgb(235, 228, 228);
+  --cor-element-preta: #312f2f;
+  --cor-element-cinza: #808080;
+  --cor-element-branco: #FFFBF0;
 
-  --cor-item-preta: rgb(59, 53, 53);
-  --cor-item-cinza: rgb(189, 179, 179);
-  --cor-item-branco: rgb(214, 207, 207);
+  --cor-item-preta: #1E1E1E;
+  --cor-item-cinza: #3A3A3A;
+  --cor-item-branco: #F0F8FF;
 
-  --cor-botao-verde: rgb(35, 190, 35);
-  --cor-botao-vermelho: rgb(177, 45, 45);
-  --cor-botao-amarelo: rgb(175, 175, 25);
-  --cor-botao-branco: white;
+  --cor-botao-verde: #27AE60;
+  --cor-botao-vermelho: #C0392B;
+  --cor-botao-amarelo: #D4AC0D;
+  --cor-botao-branco: #FFFFFF;
 
   /* COLOR FONT -------------------------- */
-  --font-preta: black;
-  --font-branca: white;
-  --font-cinza: gray;
-  --font-vermelha: red;
-  --font-verde: green;
+  --font-preta: #1A1A1A;
+  --font-branca: #E0E0E0;
+  --font-cinza: #A0A0A0;
+  --font-vermelha: #FF6B6B;
+  --font-verde: #4ECB71;
 
   /* TAMANHO FONT ------------------------ */
   --font-padrao: 16px;
@@ -70,15 +70,15 @@
   --font-titulo: 25px;
 
   /* BORDER ------------------------------ */
-  --borda-1px-verde: 1px solid green;
-  --borda-3px-verde: 3px solid green;
-  --borda-5px-verde: 5px solid green;
+  --borda-1px-verde: 1px solid #00FF41;
+  --borda-3px-verde: 3px solid #00FF41;
+  --borda-5px-verde: 5px solid #00FF41;
 
-  --borda-1px-branca: 1px solid white;
-  --borda-3px-branca: 3px solid white;
-  --borda-5px-branca: 5px solid white;
+  --borda-1px-branca: 1px solid #E0FFFF;
+  --borda-3px-branca: 3px solid #E0FFFF;
+  --borda-5px-branca: 5px solid #E0FFFF;
 
-  --borda-1px-vermelha: 1px solid red;
-  --borda-3px-vermelha: 3px solid red;
-  --borda-5px-vermelha: 5px solid red;
+  --borda-1px-vermelha: 1px solid #FF003C;
+  --borda-3px-vermelha: 3px solid #FF003C;
+  --borda-5px-vermelha: 5px solid #FF003C;
 }

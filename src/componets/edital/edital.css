@@ -37,9 +37,8 @@
 
 .element-edital {
     display: flex;
-    background-color: var(--cor-element-preta);
+    background-color: var(--cor-element-branco);
     align-items: center;
-
     justify-content: end;
     padding: 5px;
 }
@@ -52,9 +51,13 @@
 
 .element-subtopico {
     background-color: var(--cor-element-preta);
-    opacity: 0.9;
     margin-left: 40px;
     border-radius: 0px 0px 25px 25px;
+}
+
+.element-subtopico p {
+    color: var(--font-branca) !important;
+    cursor: default !important;
 }
 
 .item-opcoesEdital {
@@ -70,7 +73,7 @@
 }
 
 .opcoes-editEdital {
-    color: var(--cor-botao-branco);
+    color: var(--cor-botao-amarelo);
 }
 
 .item-nomeEdital {
@@ -82,8 +85,13 @@
     padding: 0px 10px;
 }
 
+.item-nomeEdital p, .item-nomeEdital span {
+    color: var(--font-preta);
+}
+
 .icon-transparentEdital {
-    color: transparent;
+    color: transparent !important;
+    cursor: default !important;
 }
 
 .nome-editalPadrao {
