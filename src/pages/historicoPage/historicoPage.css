@@ -44,7 +44,7 @@
     word-wrap: break-word;
     word-break: break-word;
     hyphens: auto;
-    text-align: justify;
+    width: fit-content;
     color: var(--font-preta);
 }
 
